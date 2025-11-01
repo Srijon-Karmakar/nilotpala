@@ -112,7 +112,7 @@ export default function CategoriesSection() {
         variants={containerVariants}
         initial="hidden"
         animate={controls}
-        className="relative z-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-6 font-Manrope"
+        className="relative z-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto px-6 font-Manrope"
       >
         {categories.map((cat, i) => (
           <motion.div
@@ -126,7 +126,7 @@ export default function CategoriesSection() {
               boxShadow: "0 30px 80px rgba(255,255,255,0.15)",
             }}
             transition={{ type: "spring", stiffness: 180, damping: 18 }}
-            className="group relative overflow-hidden rounded-3xl border border-white/15 bg-white/10 backdrop-blur-lg p-8"
+            className="group relative overflow-hidden rounded-3xl border border-white/15 bg-white/10 backdrop-blur-md p-8"
           >
             <div className="text-5xl mb-4">{cat.icon}</div>
             <h3 className="text-xl md:text-2xl font-semibold mb-3 tracking-tight group-hover:text-white transition-colors">
