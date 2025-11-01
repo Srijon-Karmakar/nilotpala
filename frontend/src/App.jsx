@@ -25,6 +25,7 @@ import Product from "./components/Product";
 import Categories from "./components/categories"
 import Trending from "./components/Trending"
 import Testimonial from "./components/Testimonial"
+import Footer from "./components/footer"
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
@@ -39,6 +40,7 @@ export default function App() {
           <Categories/>
           <Trending/>
           <Testimonial/>
+          <Footer/>
         </>
       )}
     </div>
